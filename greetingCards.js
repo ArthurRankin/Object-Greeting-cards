@@ -34,5 +34,7 @@ let xmasdaycard = new Card("Merry Xmas!", "Open up to see if you got any present
 console.log(xmasdaycard.cardmaker.makeFrontMessage(xmasdaycard.heading, xmasdaycard.console));
 console.log(xmasdaycard.cardmaker.makeInsideMessage(xmasdaycard.inheader, xmasdaycard.message));
 
-// let bday = document.getElementsByClassName("bday-div");
-// bday.innerHTML = bdaycard.cardmaker.makeFrontMessage(bdaycard.heading, bdaycard.content);
+let bdayFront = document.getElementsByClassName("bday-front-div")[0];
+bdayFront.innerHTML = bdaycard.cardmaker.makeFrontMessage(bdaycard.heading, bdaycard.content);
+let bdayInside = document.getElementsByClassName("bday-inside-div")[0];
+bdayInside.innerHTML = bdaycard.cardmaker.makeInsideMessage(bdaycard.inheader, bdaycard.message);
